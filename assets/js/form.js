@@ -3,7 +3,13 @@ const form = document.getElementById('form');
 
 // TODO: Create a function that handles the form submission. Grab the form data and store it in local storage, then redirect to the blog page using the redirectPage function. If the form is submitted with missing data, display an error message to the user.
 
-let redirectURL = '';
+let redirectURL = 'file:///Users/den/Bootcamp/homework/Challenge-4/blog.html';
+
+function pageSubmission(event) {
+  event.preventDefault();
+}
+
+localStorage.setItem('form', JSON.stringify(form));
 
 const redirectPage = function (url) {
   redirectURL = url;
