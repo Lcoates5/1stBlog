@@ -10,8 +10,6 @@ function pageSubmission(event) {
   event.preventDefault();
 }
 
-
-
 const redirectPage = function (url) {
   redirectURL = url;
   location.assign(url);
@@ -26,6 +24,12 @@ form.addEventListener('submit', function(event) {
     title:titleEl.value,
     content:contentEl.value
   }
+  if (formValue.username === '' || formValue.title === '' || formValue.content === '') {
+    const errorMessage = document.getElementById('errormessage');
+    errorMessage.innerText = 'Please complete the form';
+    return
+  }
+
   localStorage.setItem('form', JSON.stringify(formValue));
   redirectPage('blog.html');
 });
