@@ -1,5 +1,5 @@
 // TODO: Create a variable that selects the main element
-
+const main = document.querySelector('main')
 
 // TODO: Create a function that builds an element and appends it to the DOM
 
