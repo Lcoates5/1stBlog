@@ -2,7 +2,7 @@
 const main = document.querySelector('main')
 // TODO: Create a function that builds an element and appends it to the DOM
 function createBlogPost() {
-    console.log("creating new blog post") 
+    console.log("creating new blog post")
     const blogPosts = readBlogPostStorage()
     console.log(blogPosts)
     
