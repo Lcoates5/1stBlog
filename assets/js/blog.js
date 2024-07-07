@@ -1,9 +1,9 @@
 // TODO: Create a variable that selects the main element
-const main = document.querySelector('main')
+const main = document.querySelector('main');
+const blogPosts = readBlogPostStorage();
 // TODO: Create a function that builds an element and appends it to the DOM
 function createBlogPost() {
     console.log("creating new blog post")
-    const blogPosts = readBlogPostStorage()
     console.log(blogPosts)
     
     for (let index = 0; index < blogPosts.length; index++) {
@@ -13,7 +13,7 @@ function createBlogPost() {
         blogPostTitle.textContent = currentBlogPost.blogPostTitle
         blogPostElem.appendChild(blogPostTitle)
     }
-    main.appendChild(blogPost)
+    main.appendChild(blogPostElem)
 }
 // TODO: Create a function that handles the case where there are no blog posts to display
 function handleNoBlogPosts(event) {

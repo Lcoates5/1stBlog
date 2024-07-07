@@ -1,9 +1,7 @@
 /*
   Form Styles
 */
-form {
-  display: flex;
-}
+
 /*
   Tags
 */
@@ -17,6 +15,9 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
 }
 
 aside, 
