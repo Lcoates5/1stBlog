@@ -4,7 +4,6 @@ const usernameEl = document.getElementById('username')
 const titleEl = document.getElementById('title')
 const contentEl = document.getElementById('content')
 // TODO: Create a function that handles the form submission. Grab the form data and store it in local storage, then redirect to the blog page using the redirectPage function. If the form is submitted with missing data, display an error message to the user.
-// document.body.classList.add('light-mode');
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -30,11 +29,6 @@ window.location.href = 'blog.html';
   localStorage.setItem('form', JSON.stringify(formValue));
   redirectPage('blog.html');
 }
-
-const redirectPage = function (url) {
-  redirectURL = url;
-  location.assign(url);
-};
 
 // TODO: Add an event listener to the form on submit. Call the function to handle the form submission.
 
