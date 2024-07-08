@@ -16,13 +16,13 @@ function createBlogPost(event) {
 
             const blogPostElem = document.createElement("article")
             const blogPostTitle = document.createElement('h3')
-            blogPostTitle.textContent = currentBlogPost.blogPostTitle;
+            blogPostTitle.textContent = currentBlogPost.title;
             console.log(currentBlogPost.blogPostTitle)
-            
+
             const blogPostContent = document.createElement('p');
-            blogPostContent.textContent = currentBlogPost.blogPostContent;
+            blogPostContent.textContent = currentBlogPost.Content;
             const blogPostAuthor = document.createElement('p');
-            blogPostAuthor.textContent = currentBlogPost.blogPostAuthor;
+            blogPostAuthor.textContent = currentBlogPost.username;
 
             blogPostElem.appendChild(blogPostTitle)
             blogPostElem.appendChild(blogPostContent);
