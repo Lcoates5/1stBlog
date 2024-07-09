@@ -5,7 +5,8 @@
 /*
   Tags
 */
-aside {
+aside 
+ {
   background: linear-gradient(
     var(--light-accent), 
     var(--circle-color), 
@@ -19,6 +20,7 @@ aside {
   height: 500px;
   width: 500px;
 }
+
 
 aside, 
 section {

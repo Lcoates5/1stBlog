@@ -59,6 +59,7 @@ ul {
 .dark-mode {
   background-color: black;
   color: white;
+  --circle-color: #ff5733;
 }
 :root {
   --light: #fff;
